@@ -1,7 +1,10 @@
 "use client";
 
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "animate.css";
 import { footerCards, footerLinks } from "@/utils/helper";
-import React from "react";
 import Heading from "./Heading";
 import Para from "./Para";
 import Icon from "./Icons";
@@ -11,13 +14,22 @@ import Icon from "./Icons";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 80,
+    });
+  }, []);
+
   return (
     <footer className=" bg-off-black ">
       {/* CTA Section */}
       <div className="mx-auto w-full max-w-360 px-4 pt-10 sm:px-8 sm:pt-12 lg:px-12.5 lg:pt-12.5">
         {/* Heading */}
         <div className="mx-auto max-w-222.5 text-center flex flex-col items-center">
-          <Heading vari={"secondary"}>Need Help Selecting the Right Magnet Wire Solution?</Heading>
+          <Heading vari={"secondary"} className="animate__animated animate__flipInX">Need Help Selecting the Right Magnet Wire Solution?</Heading>
 
           <Para vari={"primary"} className="max-w-149 mt-4 text-off-gray-100/80">Our product experts can help you select the right terminal, tooling and process for your motor design and production needs.</Para>
         </div>
@@ -27,6 +39,10 @@ const Footer = () => {
           {footerCards.map((card, index) => (
             <div
               key={index}
+              data-aos="flip-up"
+              data-aos-delay={index * 200}
+              data-aos-duration="700"
+              data-aos-once="true"
               className="rounded-lg bg-dark-charcoal py-4.75 px-5 sm:min-h-37 sm:last:col-span-2 sm:last:justify-self-center lg:last:col-span-1"
             >
               <h3 className="text-lg font-medium leading-160 text-off-gray-100">
