@@ -1,5 +1,6 @@
 "use client";
 
+import "animate.css";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Heading from "../common/Heading";
@@ -115,7 +116,7 @@ const Motordesigns = () => {
         {/* LEFT CONTENT */}
         <div className="w-full  xl:max-w-132.5 flex flex-col xl:text-start text-center gap-4">
 
-          <Heading vari={"primary"}>
+          <Heading vari={"primary"} className="animate__animated animate__fadeInDown">
             Optimize Motor Designs with Advanced Termination Solutions
           </Heading>
 

@@ -2,6 +2,9 @@
 
 import { RIGHT_MAGNER } from "@/utils/helper";
 import React, { useState, useEffect, useRef } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "animate.css";
 import Heading from "../common/Heading";
 import Image from "next/image";
 import Para from "../common/Para";
@@ -42,7 +45,7 @@ const PopupModal = ({ item, onClose }) => {
         className="bg-white rounded-2xl w-full max-w-335 max-h-[90vh] overflow-y-auto p-6 relative"
       >
         <div className="flex flex-col lg:flex-row gap-10 w-full">
-          <div className={`${ item.heading === RIGHT_MAGNER[0].heading ? "lg:w-80" : "lg:w-92"}`}>
+          <div className={`${item.heading === RIGHT_MAGNER[0].heading ? "lg:w-80" : "lg:w-92"}`}>
             <h3 className="text-2xl font-semibold text-off-black mb-4 leading-140">
               {item.heading}
             </h3>
@@ -62,8 +65,8 @@ const PopupModal = ({ item, onClose }) => {
               href=""
             >
               Learn More{" "}
-              <span className="transition-transform duration-300 group-hover:translate-x-2"> 
-              <Icon icon={"chevronleft2"} />
+              <span className="transition-transform duration-300 group-hover:translate-x-2">
+                <Icon icon={"chevronleft2"} />
               </span>
             </a>
           </div>
@@ -145,21 +148,34 @@ const PopupModal = ({ item, onClose }) => {
 const Team = () => {
   const [activePopup, setActivePopup] = useState(null);
 
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 80,
+    });
+  }, []);
+
   return (
     <>
       <div className="px-4 sm:px-8 md:px-10 lg:px-12.5 py-10 sm:py-15 md:py-15 lg:pt-30 lg:pb-12.5">
         <div className="max-w-335 mx-auto w-full flex flex-col items-center  justify-center">
-          <Heading vari={"primary"} >
+          <Heading vari={"primary"} className="animate__animated animate__flipInX" >
             Choose the Right Magnet Wire Termination Technology
           </Heading>
-          <Para vari={"secondary"} className="mt-4"> 
-              Find the best TE solution for your motor or coil design.
+          <Para vari={"secondary"} className="mt-4">
+            Find the best TE solution for your motor or coil design.
           </Para>
 
           <div className="max-sm:max-w-125 max-lg:max-w-183.5 max-lg:mx-auto mt-12.5 grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6">
             {RIGHT_MAGNER.map((items, index) => (
               <div
                 key={index}
+                data-aos="zoom-in"
+                data-aos-delay={index * 250}
+                data-aos-duration="700"
+                data-aos-once="true"
                 className={` border border-black/8  bg-off-gray-100 p-4 rounded-xl flex flex-col justify-between `}
               >
                 <div>
@@ -169,7 +185,7 @@ const Team = () => {
                     alt={items.heading}
                     width={285}
                     height={228}
-                   
+
                   />
                   <h4 className="font-medium mt-6 text-lg leading-160 text-off-black">
                     {items.heading}
@@ -183,9 +199,9 @@ const Team = () => {
                   >
                     {items.link}
                     <span className="transition-transform duration-300 group-hover:translate-x-2">
-                    <Icon icon={"chevronleft"} />
+                      <Icon icon={"chevronleft"} />
                     </span>
-                    
+
                   </button>
                 </div>
               </div>

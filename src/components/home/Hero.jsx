@@ -1,3 +1,9 @@
+"use client";
+
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "animate.css";
 import { bottomTabs } from "@/utils/helper";
 import Button from "../common/Button";
 import Icon from "../common/Icons";
@@ -5,6 +11,16 @@ import Para from "../common/Para";
 
 
 const Hero = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-out",
+      once: true,
+      offset: 50,
+    });
+  }, []);
+
   return (
     <section
       className="
@@ -18,7 +34,7 @@ const Hero = () => {
         sm:bg-center
       "
     >
-     
+
 
       {/* Content */}
       <div
@@ -46,6 +62,9 @@ const Hero = () => {
         <div className="max-w-227.25 w-full">
           <h1
             className="
+              animate__animated
+              animate__fadeInUp
+              animate__slow
               w-full
               font-medium
               lg:text-custom-42
@@ -87,20 +106,20 @@ const Hero = () => {
               <span className="transition-transform duration-300 text-off-gray-100 group-hover:text-orange ease-out  group-hover:translate-y-0.5 [&_svg_path]:stroke-off-gray-100 group-hover:[&_svg_path]:stroke-orange">
                 <Icon icon={"download"} />
               </span>
-              </Button>
+            </Button>
           </div>
 
           <div className=" w-full border-t border-off-gray-100/20 mb-8 sm:mb-10 lg:mb-12.5"></div>
 
           <div className="flex gap-3 overflow-x-auto overflow-y-hidden [-ms-overflow-style:none] scrollbar-none [&::-webkit-scrollbar]:hidden">
-            {bottomTabs.map((tab) => (
-              <a href="#" key={tab} className="group relative isolate shrink-0 overflow-hidden rounded-full border border-off-gray-100/20 bg-linear-to-b from-white/4 to-white/12 backdrop-blur-md sm:px-5 px-4 sm:py-2.25 py-2 font-normal text-sm sm:text-base leading-160 text-off-gray-100 cursor-pointer transition-all duration-500 hover:border-white/40 hover:shadow-[0_0_20px_rgba(255,255,255,0.08)] before:absolute before:inset-y-0 before:-left-full before:z-[-1] before:w-full before:skew-x-[-20deg] before:bg-linear-to-r before:from-transparent before:via-white/15 before:to-transparent before:transition-all before:duration-700 hover:before:left-full">{tab}</a>
+            {bottomTabs.map((tab, index) => (
+              <a href="#" key={tab} data-aos="fade-up" data-aos-delay={index * 200} className="group relative isolate shrink-0 overflow-hidden rounded-full border border-off-gray-100/20 bg-linear-to-b from-white/4 to-white/12 backdrop-blur-md sm:px-5 px-4 sm:py-2.25 py-2 font-normal text-sm sm:text-base leading-160 text-off-gray-100 cursor-pointer transition-all duration-500 hover:border-white/40 hover:shadow-[0_0_20px_rgba(255,255,255,0.08)] before:absolute before:inset-y-0 before:-left-full before:z-[-1] before:w-full before:skew-x-[-20deg] before:bg-linear-to-r before:from-transparent before:via-white/15 before:to-transparent before:transition-all before:duration-700 hover:before:left-full">{tab}</a>
             ))}
           </div>
 
         </div>
 
-        
+
       </div>
     </section>
   );

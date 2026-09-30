@@ -1,5 +1,6 @@
 "use client";
 
+import "animate.css";
 import React, { useState } from "react";
 import Heading from "../common/Heading";
 import Para from "../common/Para";
@@ -30,7 +31,7 @@ const Application = () => {
 
         {/* HEADING */}
         <div className="mx-auto mb-10 max-w-126.75 text-center md:mb-12.5">
-          <Heading vari="primary">
+          <Heading vari="primary" className="animate__animated animate__flash">
             Solutions for Every Application
           </Heading>
 

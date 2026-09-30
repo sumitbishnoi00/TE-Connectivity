@@ -1,9 +1,25 @@
+"use client";
+
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "animate.css";
 import { benefitsData } from "@/utils/helper";
 import Icon from "../common/Icons";
 import Heading from "../common/Heading";
 import Para from "../common/Para";
 
 const Benefits = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 80,
+    });
+  }, []);
+
   return (
     <section className="bg-orange/4">
       <div
@@ -21,7 +37,7 @@ const Benefits = () => {
         "
       >
 
-        <Heading vari={"primary"} className="text-center mb-7.5">Benefits that Drive Better Manufacturing</Heading>
+        <Heading vari={"primary"} className="text-center mb-7.5 animate__animated animate__fadeInDown">Benefits that Drive Better Manufacturing</Heading>
 
         <div
           className="
@@ -38,6 +54,10 @@ const Benefits = () => {
           {benefitsData.map((item, index) => (
             <div
               key={item.title}
+              data-aos="fade-down"
+              data-aos-delay={index * 300}
+              data-aos-duration="700"
+              data-aos-once="true"
               className={`
                 group
                 flex

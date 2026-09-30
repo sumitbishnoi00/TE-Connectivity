@@ -1,5 +1,6 @@
 "use client";
 
+import "animate.css";
 import React, { useEffect, useRef, useState } from "react";
 import Heading from "../common/Heading";
 import Para from "../common/Para";
@@ -91,7 +92,7 @@ const Designdecisions = () => {
         >
           {/* HEADING */}
           <div className="max-w-150.5">
-            <Heading vari="primary">
+            <Heading vari="primary" className="animate__animated animate__fadeInDown">
               Expert Resources to Guide Your Design Decisions
             </Heading>
           </div>

@@ -1,3 +1,9 @@
+"use client";
+
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "animate.css";
 import { solderlessData, traditionalData } from "@/utils/helper";
 import Heading from "../common/Heading";
 import Para from "../common/Para";
@@ -5,6 +11,15 @@ import Icon from "../common/Icons";
 import Image from "next/image";
 
 const WhySwitch = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 80,
+    });
+  }, []);
 
   return (
     <section className="bg-off-gray-100">
@@ -24,10 +39,10 @@ const WhySwitch = () => {
         "
       >
         <div className="flex flex-col xl:flex-row max-xl:items-center  gap-6 lg:gap-20">
-          
+
           {/* Left Content */}
           <div className="flex xl:max-w-81.5 max-w-233.5 w-full flex-col xl:text-start text-center lg:shrink-0">
-            <Heading vari={"primary"}>
+            <Heading vari={"primary"} className="animate__animated animate__bounce">
               Why Switch from Soldered to Solderless Termination?
             </Heading>
 
@@ -38,9 +53,12 @@ const WhySwitch = () => {
 
           {/* Right Cards */}
           <div className="relative flex max-w-233.5 w-full flex-col gap-6 sm:flex-row">
-            
+
             {/* Traditional Card */}
             <div
+              data-aos="fade-right"
+              data-aos-duration="700"
+              data-aos-once="true"
               className="
                 w-full
                 rounded-xl
@@ -101,6 +119,10 @@ const WhySwitch = () => {
 
             {/* Solderless Card */}
             <div
+              data-aos="fade-left"
+              data-aos-duration="700"
+              data-aos-delay="200"
+              data-aos-once="true"
               className="
                 w-full
                 rounded-xl
@@ -113,7 +135,7 @@ const WhySwitch = () => {
             >
               {/* TE Header */}
               <div className="flex items-center gap-4">
-                
+
                 <Image src={"/assets/images/webp/Logo.webp"} width={76} height={28} className="w-19 h-7" />
 
                 <h3 className="text-xl font-medium leading-140 text-off-black">
@@ -125,9 +147,9 @@ const WhySwitch = () => {
                 {solderlessData.map((item, index) => (
                   <div
                     key={index}
-                    className={`flex gap-2 ${ index === 0 ? "items-center" : "items-start"}`}
+                    className={`flex gap-2 ${index === 0 ? "items-center" : "items-start"}`}
                   >
-                    <span className={`flex items-center justify-center w-6 shrink-0 ${ index === 0 ? "h-6" : "h-6.5"} `}>
+                    <span className={`flex items-center justify-center w-6 shrink-0 ${index === 0 ? "h-6" : "h-6.5"} `}>
                       <Icon icon={"check"} />
                     </span>
 

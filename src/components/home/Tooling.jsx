@@ -1,7 +1,10 @@
 "use client";
 
+import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "animate.css";
 import { tabData, tabData2 } from "@/utils/helper";
-import { useState } from "react";
 import Heading from "../common/Heading";
 import Para from "../common/Para";
 import Image from "next/image";
@@ -13,12 +16,21 @@ export default function ApplicationTooling() {
 
   const activeData = tabData2[activeTab];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 80,
+    });
+  }, []);
+
   return (
     <section className="bg-white px-4 py-10 md:px-8 lg:px-12.5 md:py-12 lg:pb-12 lg:pt-17.5">
       <div className="mx-auto max-w-335 w-full">
 
         {/* Heading */}
-        <Heading vari={"primary"}>Application Tooling Options for Magnet Wire Terminations</Heading>
+        <Heading vari={"primary"} className="animate__animated animate__backInRight">Application Tooling Options for Magnet Wire Terminations</Heading>
 
         <Para vari={"secondary"} className="mt-4">
           Explore the manual, semi-automatic, and automatic application tooling solutions for our solderless terminals.
@@ -53,9 +65,13 @@ export default function ApplicationTooling() {
 
         {/* Cards */}
         <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {activeData.cards.map((card) => (
+          {activeData.cards.map((card, index) => (
             <div
               key={card.title}
+              data-aos="zoom-in"
+              data-aos-delay={index * 200}
+              data-aos-duration="700"
+              data-aos-once="true"
               className={` flex min-h-227 flex-col rounded-xl border border-off-black/8 bg-off-gray-100 p-4 ${"md:last:col-span-2 md:last:w-1/2 md:last:justify-self-center lg:last:col-span-1 lg:last:w-full"} `}
             >
 
