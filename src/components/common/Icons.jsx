@@ -87,8 +87,21 @@ const Icon = ({ icon, className, pathName }) => {
         ),
 
         download: (
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.66797 15.5833V17.4167C3.66797 17.9029 3.86112 18.3692 4.20494 18.713C4.54876 19.0568 5.01507 19.25 5.5013 19.25H16.5013C16.9875 19.25 17.4538 19.0568 17.7977 18.713C18.1415 18.3692 18.3346 17.9029 18.3346 17.4167V15.5833M15.5846 10.0833L11.0013 14.6667L6.41797 10.0833M11.0013 14.6667V3.66666" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <svg
+                className={className}
+                width="22"
+                height="22"
+                viewBox="2.5 2.5 17 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M3.66797 15.5833V17.4167C3.66797 17.9029 3.86112 18.3692 4.20494 18.713C4.54876 19.0568 5.01507 19.25 5.5013 19.25H16.5013C16.9875 19.25 17.4538 19.0568 17.7977 18.713C18.1415 18.3692 18.3346 17.9029 18.3346 17.4167V15.5833M15.5846 10.0833L11.0013 14.6667L6.41797 10.0833M11.0013 14.6667V3.66666"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                />
             </svg>
 
 

@@ -102,7 +102,7 @@ export default function ApplicationTooling() {
 
                   <div className="font-normal text-sm leading-160 text-dark-gray-100 sm:text-base">
                     {Array.isArray(card.priceRange) ? (
-                      <ul className="list-disc pl-5">
+                      <ul className="list-disc pl-4">
                         {card.priceRange.map((price) => (
                           <li key={price}>{price}</li>
                         ))}
@@ -113,7 +113,7 @@ export default function ApplicationTooling() {
                   </div>
                 </div>
 
-                {/* Purchase From */}
+                
                 {/* Purchase From */}
                 <div className="grid grid-cols-[1fr_1fr] xl:grid-cols-[202px_1fr] gap-2.5 border-b border-off-black/8 pb-2.5">
                   <span className="text-sm font-semibold leading-160 text-off-black sm:text-base">
@@ -125,7 +125,7 @@ export default function ApplicationTooling() {
                       <>
                         <div className="mb-2">{card.purchaseFrom[0]}</div>
 
-                        <ul className="list-disc pl-5 flex flex-col gap-2">
+                        <ul className="list-disc pl-4 flex flex-col gap-2">
                           {card.purchaseFrom.slice(1).map((item) => (
                             <li key={item}>{item}</li>
                           ))}
@@ -169,7 +169,7 @@ export default function ApplicationTooling() {
 
                   <div className="text-sm font-semibold leading-160 text-off-black sm:text-base">
                     {Array.isArray(card.additionalInfo) ? (
-                      <ul className="list-disc pl-5">
+                      <ul className="list-disc pl-4">
                         {card.additionalInfo.map((info) => (
                           <li key={info} className=" mb-1.5">
                             {info}

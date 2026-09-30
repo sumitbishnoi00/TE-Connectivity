@@ -49,7 +49,7 @@ const Footer = () => {
                 {card.title}
               </h3>
 
-              <p className="mt-2.75 text-base font-normal leading-160 text-off-gray-100">
+              <p className="mt-2.75 text-base font-normal leading-160 text-off-gray-100/80">
                 {card.description}
               </p>
 

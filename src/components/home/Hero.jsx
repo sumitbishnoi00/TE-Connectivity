@@ -103,8 +103,8 @@ const Hero = () => {
             <Button vari={"Secondary"}>
               Download Reference Guide
 
-              <span className="transition-transform duration-300 text-off-gray-100 group-hover:text-orange ease-out  group-hover:translate-y-0.5 [&_svg_path]:stroke-off-gray-100 group-hover:[&_svg_path]:stroke-orange">
-                <Icon icon={"download"} />
+              <span className=" inline-flex w-5.5 h-5.5 shrink-0 items-center justify-center transition-transform duration-300 text-off-gray-100 group-hover:text-orange ease-out  group-hover:translate-y-0.5 [&_svg_path]:stroke-off-gray-100 group-hover:[&_svg_path]:stroke-orange">
+                <Icon icon={"download"} className="w-5.5! h-5.5! shrink-0" />
               </span>
             </Button>
           </div>

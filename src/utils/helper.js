@@ -126,7 +126,7 @@ export const tabData2 = {
           "Sipro (Americas & EMEA)",
           "Zhanxu (Asia)",
         ],
-        leadTime: "12-20 weeks, depending on complexity",
+        leadTime: "12-20 weeks, depend on complexity",
         additionalInfo: "Customizable, semi-automatic machine",
         image: "/assets/images/webp/cls-inserter-machines.webp",
       },
@@ -140,7 +140,7 @@ export const tabData2 = {
           "Zhanxu (Asia)",
         ],
         leadTime: "20+ weeks, depending on complexity",
-        additionalInfo: "Customizable, automated workstations",
+        additionalInfo: "Customizable, automat workstations",
         image: "/assets/images/webp/cls-custom-work-stations.webp",
       },
     ],
@@ -156,7 +156,7 @@ export const tabData2 = {
         purchaseFrom: [
           "Recommended partners:",
           "Mecal (Americas & Europe)",
-          "Zhanxu Electrical (Asia)",
+          "Zhanxu Electric (Asia)",
         ],
         leadTime: "10 weeks",
         spliceTypes: "Pig-Tail only",
@@ -260,7 +260,7 @@ export const RIGHT_MAGNER = [
           label: "Standard Wire Range",
           about: [
             "Copper wire: 34-18 AWG / 0.16-1.02 mm",
-            "Aluminum wire: 25-18 AWG / 0.45-1.00 mm",
+            "Aluminum wire: 25-18 AG / 0.45-1.00 mm",
             "Lead wire: 22-18 AWG / 0.3-0.8 mm²",
           ],
         },
@@ -360,7 +360,7 @@ export const applicationData = [
   {
     title: "Robotics & Factory Automation",
     description:
-      "For servo motors, stepper motors, and robotic actuators, TE MagWire solutions enable compact, reliable motor connections that support automation, precision motion control, and efficient manufacturing.",
+      "For servo motors, stepper motors, and robotic actuators, TE MagWire solutions and compact, reliable motor connections that support automation, precision motion control, efficient manufacturing.",
     icon: "robot",
   },
   {

@@ -23,7 +23,7 @@ const Navbar = () => {
     <header className="bg-white">
 
       {/* ================= NAVBAR ================= */}
-      <nav className="mx-auto flex h-20 sm:h-25 max-w-279 items-center gap-4 md:gap-6 px-4">
+      <nav className="mx-auto flex h-20 sm:h-25 max-w-287 items-center gap-4 md:gap-6 px-4">
 
         {/* ================= LOGO ================= */}
         <Link
@@ -94,7 +94,7 @@ const Navbar = () => {
             </span>
 
             <span className="whitespace-nowrap">
-            <span className="transition-colors duration-300 hover:text-orange">
+            <span className=" transition-colors duration-300 hover:text-orange">
               Login
             </span>
             <span className="mx-1.25">

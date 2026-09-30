@@ -189,16 +189,22 @@ const Designdecisions = () => {
                     cursor-pointer
                   "
                 >
-                  {item.action}
+
 
                   {item.action === "Download" ? (
-                    <span className="transition-transform duration-300 ease-out group-hover:translate-y-1.5">
-                      <Icon icon={"download"} />
-                    </span>
+                    <>
+                      <span className="transition-transform duration-300 ease-out group-hover:translate-y-1.5">
+                        <Icon icon={"download"} />
+                      </span>
+                      {item.action}
+                    </>
                   ) : (
-                    <span className="transition-transform duration-300 ease-out group-hover:translate-x-2">
-                      <Icon icon={"chevronleft3"} />
-                    </span>
+                    <>
+                      {item.action}
+                      <span className="transition-transform duration-300 ease-out group-hover:translate-x-2">
+                        <Icon icon={"chevronleft3"} />
+                      </span>
+                    </>
                   )}
                 </button>
               </div>
