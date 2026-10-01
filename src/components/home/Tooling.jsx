@@ -143,7 +143,7 @@ export default function ApplicationTooling() {
                     Lead Time:
                   </span>
 
-                  <span className="text-sm font-semibold leading-160 text-dark-gray-100 sm:text-base">
+                  <span className="text-sm font-normal leading-160 text-dark-gray-100 sm:text-base">
                     {card.leadTime}
                   </span>
                 </div>
@@ -155,7 +155,7 @@ export default function ApplicationTooling() {
                       Splice Type(s):
                     </span>
 
-                    <span className="text-sm font-semibold leading-160 text-dark-gray-100 sm:text-base">
+                    <span className="text-sm font-normal leading-160 text-dark-gray-100 sm:text-base">
                       {card.spliceTypes}
                     </span>
                   </div>
@@ -167,7 +167,7 @@ export default function ApplicationTooling() {
                     Additional Information:
                   </span>
 
-                  <div className="text-sm font-semibold leading-160 text-dark-gray-100 sm:text-base">
+                  <div className="text-sm font-normal leading-160 text-dark-gray-100 sm:text-base">
                     {Array.isArray(card.additionalInfo) ? (
                       <ul className="list-disc pl-4">
                         {card.additionalInfo.map((info) => (
