@@ -44,6 +44,14 @@ const PopupModal = ({ item, onClose }) => {
         ref={modalRef}
         className="bg-white rounded-2xl w-full max-w-335 max-h-[90vh] overflow-y-auto p-6 relative"
       >
+        <button
+          type="button"
+          onClick={onClose}
+          aria-label="Close popup"
+          className="absolute top-5 right-5 z-10 flex items-center justify-center cursor-pointer text-off-black transition-opacity hover:opacity-60"
+        >
+          <Icon icon={"closeicon2"} />
+        </button>
         <div className="flex flex-col lg:flex-row gap-10 w-full">
           <div className={`${item.heading === RIGHT_MAGNER[0].heading ? "lg:w-80" : "lg:w-92"}`}>
             <h3 className="text-2xl font-semibold text-off-black mb-4 leading-140">

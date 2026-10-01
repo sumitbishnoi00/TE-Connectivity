@@ -43,6 +43,13 @@ const Icon = ({ icon, className, pathName }) => {
             </svg>
         ),
 
+        closeicon2: (
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 8L8 24M8 8L24 24" stroke="#010101" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+        ),
+
         usericon: (
             <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="44" height="44" rx="22" fill="#010101" fill-opacity="0.08" />
