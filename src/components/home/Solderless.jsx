@@ -30,7 +30,7 @@ export default function SolderlessTermination() {
 
         {/* Heading */}
         <div className="flex flex-col xl:items-start items-center xl:text-start text-center ">
-          <Heading vari={"primary"} className="animate__animated animate__backInRight">How Solderless Magnet Wire Termination Works</Heading>
+          <Heading vari={"primary"} className="animate__animated animate__heartBeat">How Solderless Magnet Wire Termination Works</Heading>
 
           <Para vari={"secondary"} className="mt-4 max-w-204">
             Solderless terminals can be terminated using various methods, including Insulation Displacement Contact and Open-Barrel Crimping depending on the application requirements.

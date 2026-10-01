@@ -30,7 +30,7 @@ export default function ApplicationTooling() {
       <div className="mx-auto max-w-335 w-full">
 
         {/* Heading */}
-        <Heading vari={"primary"} className="animate__animated animate__backInRight">Application Tooling Options for Magnet Wire Terminations</Heading>
+        <Heading vari={"primary"} className="animate__animated animate__shakeY">Application Tooling Options for Magnet Wire Terminations</Heading>
 
         <Para vari={"secondary"} className="mt-4">
           Explore the manual, semi-automatic, and automatic application tooling solutions for our solderless terminals.
