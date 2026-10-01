@@ -188,7 +188,7 @@ const Icon = ({ icon, className, pathName }) => {
         ),
 
         playicon: (
-            <svg width="25" height="34" viewBox="0 0 24 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className="h-5 w-4 sm:h-6 sm:w-5 md:h-7 md:w-5.5 lg:h-8.5 lg:w-6.25" viewBox="0 0 24 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 27.058C0 29.0651 2.24602 30.254 3.90578 29.1253L21.9598 16.8486C23.4188 15.8565 23.4188 13.706 21.9598 12.7139L3.90578 0.437178C2.24602 -0.691458 0 0.497352 0 2.50449V27.058Z" fill="#FEFEFE" />
             </svg>
 

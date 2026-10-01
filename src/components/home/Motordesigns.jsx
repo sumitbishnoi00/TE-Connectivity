@@ -151,7 +151,7 @@ const Motordesigns = () => {
                   type="button"
                   onClick={handlePlay}
                   aria-label="Play YouTube video"
-                  className="absolute left-1/2 top-1/2 z-10 flex h-20 w-20 -translate-x-1/2 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white/20 backdrop-blur-[20px] transition-transform duration-200 hover:scale-110"
+                  className="absolute left-1/2 top-1/2 z-10 flex h-14 w-14 sm:h-16 sm:w-16 md:h-18 md:w-18 lg:h-20 lg:w-20 -translate-x-1/2 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white/20 backdrop-blur-[20px] transition-transform duration-200 hover:scale-110"
                 >
                   <span>
                     <Icon icon="playicon" />

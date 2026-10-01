@@ -68,10 +68,12 @@ export default function SolderlessTermination() {
 
         {/* Cards */}
         <div
-          className={`mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6 ${activeData.cards.length === 3
+          key={activeTab}
+          className={`mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6 animate__animated animate__fadeInUp ${activeData.cards.length === 3
             ? "lg:grid-cols-3"
             : "lg:grid-cols-2"
             }`}
+            style={{ "--animate-duration": "0.6s" }}
         >
           {activeData.cards.map((card) => (
 
