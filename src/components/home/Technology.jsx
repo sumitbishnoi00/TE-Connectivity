@@ -42,7 +42,7 @@ const PopupModal = ({ item, onClose }) => {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4">
       <div
         ref={modalRef}
-        className="bg-white rounded-2xl w-full max-w-335 max-h-[90vh] overflow-y-auto p-6 relative"
+        className="bg-white rounded-md w-full max-w-335 max-h-[90vh] overflow-y-auto p-6 relative"
       >
         <button
           type="button"
