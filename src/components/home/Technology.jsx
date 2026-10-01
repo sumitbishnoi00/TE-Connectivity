@@ -159,7 +159,7 @@ const Team = () => {
 
   return (
     <>
-      <div className="px-4 sm:px-8 md:px-10 lg:px-12.5 py-10 sm:py-15 md:py-15 lg:pt-30 lg:pb-12.5">
+      <div className=" px-4 py-10 sm:px-6 sm:py-10 md:px-8 md:py-15 lg:px-12.5 lg:pt-30 lg:pb-12.5">
         <div className="max-w-335 mx-auto w-full flex flex-col items-center  justify-center">
           <Heading vari={"primary"} className="animate__animated animate__flipInX" >
             Choose the Right Magnet Wire Termination Technology

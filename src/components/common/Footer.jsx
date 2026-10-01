@@ -26,7 +26,7 @@ const Footer = () => {
   return (
     <footer className=" bg-off-black ">
       {/* CTA Section */}
-      <div className="mx-auto w-full max-w-360 px-4 pt-10 sm:px-8 sm:pt-12 lg:px-12.5 lg:pt-12.5">
+      <div className="mx-auto w-full max-w-360 px-4 pt-10 sm:px-6 sm:pt-10 md:px-8 md:pt-15 lg:px-12.5 lg:pt-12.5">
         {/* Heading */}
         <div className="mx-auto max-w-222.5 text-center flex flex-col items-center">
           <Heading vari={"secondary"} className="animate__animated animate__flipInX">Need Help Selecting the Right Magnet Wire Solution?</Heading>
@@ -75,7 +75,7 @@ const Footer = () => {
 
       {/* Bottom Footer */}
       <div className="border-t border-off-gray-100/8 mt-8 sm:mt-10 md:mt-12 lg:mt-15">
-        <div className="mx-auto flex w-full max-w-360 flex-col gap-4 lg:flex-row items-center lg:justify-between py-4 sm:py-5 md:py-7.5 px-4 sm:px-8 lg:px-12.5">
+        <div className="mx-auto flex w-full max-w-360 flex-col gap-4 lg:flex-row items-center lg:justify-between py-4 sm:py-5 md:py-7.5 px-4 sm:px-6 md:px-8 lg:px-12.5">
           {/* Copyright */}
           <p className="text-base xl:text-lg font-normal leading-160 text-off-gray-100/80">
             © {currentYear} TE Connectivity. All Rights Reserved.

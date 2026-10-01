@@ -27,7 +27,7 @@ const Application = () => {
 
   return (
     <section className="bg-ivory-white">
-      <div className="mx-auto w-full max-w-360 px-4 py-10 sm:px-8 md:py-12 md:px-8 lg:p-12.5">
+      <div className="mx-auto w-full max-w-360 px-4 py-10 sm:px-6 sm:py-10 md:px-8 md:py-15 lg:p-12.5">
 
         {/* HEADING */}
         <div className="mx-auto mb-10 max-w-126.75 text-center md:mb-12.5">

@@ -63,10 +63,11 @@ const Designdecisions = () => {
           mx-auto
           w-full
           max-w-360
-          py-10
           pl-4
-          sm:py-15
-          sm:pl-8
+          py-10
+          sm:pl-6
+          sm:py-10
+          md:pl-8
           md:py-15
           lg:py-17.5
           lg:pl-12.5
@@ -83,7 +84,8 @@ const Designdecisions = () => {
             md:mb-10
             lg:mb-12.5
             lg:pr-12.5
-            sm:pr-8
+            md:pr-8
+            sm:pr-6
             pr-4
             md:flex-row
             md:items-start

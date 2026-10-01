@@ -30,9 +30,9 @@ const WhySwitch = () => {
           max-w-360
           px-4
           py-10
-          sm:px-8
-          sm:py-15
-          md:px-10
+          sm:px-6
+          sm:py-10
+          md:px-8
           md:py-15
           lg:px-12.5
           lg:py-17.5

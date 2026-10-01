@@ -25,7 +25,7 @@ export default function SolderlessTermination() {
   }, []);
 
   return (
-    <section className="bg-ivory-white px-4 py-10 md:px-8 md:py-11.5 lg:p-12.5">
+    <section className="bg-ivory-white px-4 py-10 sm:px-6 sm:py-10 md:px-8 md:py-15 lg:p-12.5">
       <div className="mx-auto max-w-335 w-full ">
 
         {/* Heading */}

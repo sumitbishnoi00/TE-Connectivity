@@ -49,9 +49,9 @@ const Hero = () => {
           justify-between
           px-4
           py-10
-          sm:px-8
-          sm:py-15
-          md:px-10
+          sm:px-6
+          sm:py-10
+          md:px-8
           md:py-15
           lg:px-12.5
           lg:pt-17.5

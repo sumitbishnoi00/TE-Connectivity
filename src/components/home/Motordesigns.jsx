@@ -111,7 +111,7 @@ const Motordesigns = () => {
 
   return (
     <section className="bg-ivory-white">
-      <div className="mx-auto flex flex-col xl:flex-row xl:items-start items-center w-full max-w-360  gap-8 px-4 py-10 sm:px-8 md:gap-10 md:py-12 md:px-8 lg:p-12.5 lg:gap-12.5">
+      <div className="mx-auto flex flex-col xl:flex-row xl:items-start items-center w-full max-w-360  gap-8  md:gap-10 px-4 py-10 sm:px-6 sm:py-10 md:px-8 md:py-15 lg:p-12.5 lg:gap-12.5">
 
         {/* LEFT CONTENT */}
         <div className="w-full  xl:max-w-132.5 flex flex-col xl:text-start text-center gap-4">

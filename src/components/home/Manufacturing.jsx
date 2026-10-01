@@ -28,10 +28,11 @@ const Benefits = () => {
           max-w-360
           w-full
           px-4
-          py-5
-          sm:px-8
-          sm:py-6
-          md:px-10
+          py-10
+          sm:px-6
+          sm:py-10
+          md:px-8
+          md:py-15
           lg:px-12.5
           lg:py-7.5
         "

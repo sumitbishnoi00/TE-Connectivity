@@ -26,7 +26,7 @@ export default function ApplicationTooling() {
   }, []);
 
   return (
-    <section className="bg-white px-4 py-10 md:px-8 lg:px-12.5 md:py-12 lg:pb-12 lg:pt-17.5">
+    <section className="bg-white px-4 py-10 sm:px-6 sm:py-10 md:px-8 md:py-15 lg:px-12.5 lg:pb-12 lg:pt-17.5">
       <div className="mx-auto max-w-335 w-full">
 
         {/* Heading */}
